@@ -19,6 +19,7 @@ document.getElementById("button").addEventListener("click",function(){
 	document.querySelector(".popup-container").style.display="flex";
 })
 
+
 	 
 //for closing the popup when pressed anywhere else but the vital sections.
 
