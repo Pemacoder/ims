@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>LogIn/SignUP</title>
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="login.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Asul:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome Icons -->
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+        
+    </head>
+    <body>
+        
+        <div class="login">
+            <button id="button">Join</button>
+        </div>
+        <div class="popup-container" id = "popup-container">
+            <!-- SignUp Form -->
+            <div class="form-container sign-up-container">
+                <form action="#" class="form-signUp" method="POST">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps%2F" class="social" id="social"><i class="fab fa-facebook"></i></a>
+                        <a href="www.gmail.com" class="social" id="social"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <div class="form-field">
+                        <input type="text" placeholder="Name" id = "name" >
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" placeholder="Email" id="email" >
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="password" placeholder="Password" id="pass">
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="password" placeholder="Confirm Password" id="confirmPass">
+                        <small></small>
+                    </div>
+                    <button type="submit" id="register">Sign Up</button>
+                </form>
+            </div>
+            <!-- SignIn Form -->
+            <div class="form-container sign-in-container">
+                <form action="" class="form-signin" method="POST">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="www.facebook.com" class="social" id="social"><i class="fab fa-facebook"></i></a>
+                        <a href="www.gmail.com" class="social" id="social"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <small id="invalid"></small>
+                    <div class="form-field">
+                        <input type="email" placeholder="Email or username" id ="e-mail" required>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="password" placeholder="Password" id="password" required>
+                        <small></small>
+                    </div>
+                    <a href="#" id="forget-link">Forgot your password?</a>
+                    <button type="submit" id="login">Sign In</button>
+                </form>
+            </div>
+            <!-- Overlays for the Forms -->
+            <div class="overlay-container">
+
+                <div class="overlay">
+
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected please enter your log in details.</p>
+                        <button class="sign" id="signIn">Sign In</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello!</h1>
+                        <p>Enter your details and start your journey</p>
+                        <button class="sign" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of the PopUp div. -->
+
+        <!-- Necessary JavaScript File -->
+        <script src="login.js"></script>
+        <script src="validation.js"></script>
+    </body>
+</html>
