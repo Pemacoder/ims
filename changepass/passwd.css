@@ -12,6 +12,7 @@ form.change-password {
     padding: 12px 15px;
     margin: 15px 0;
     width:90%;
+    display:block;
     
 }
 .change-password{
