@@ -13,61 +13,71 @@
     <link rel="stylesheet" href="leave.css">
 </head>
 <body>
-    <div class="container bg-light mt-5" style="width:35rem;">
-        <h1 class="text-dark text-center fs-2 text-uppercase border border-dark">Employee Leave Application Form</h1>
-        <form action="#" class="mt-5">
-            <div class="container border border-secondary">
-                <label class="p-4" for="name">Employee Name:</label>
-                <input type="text" id="name" name="empName">
-                <label for="date">Date:</label>
-                <input type="text" id="date" name="date" style="width:15%;"><br>
-                <label class="ms-4" for="department">Department:</label>
-                <input class="mb-5" type="text" id="department" name="dept" style="width:70%;">
+    <div class="row">
+        <div class="col-lg-2 bg-dark">
+            <ul>
+                <li>djfsd</li>
+            </ul>
+        </div>
+        <div class="col-lg-10">
+            <div class="container bg-light mt-5" style="width:35rem;">
+                <h1 class="text-dark text-center fs-2 text-uppercase border border-dark">Employee Leave Application Form</h1>
+                <form action="#" class="mt-5">
+                    <div class="container border border-secondary">
+                        <label class="p-4" for="name">Employee Name:</label>
+                        <input type="text" id="name" name="empName">
+                        <label for="date">Date:</label>
+                        <input type="text" id="date" name="date" style="width:15%;"><br>
+                        <label class="ms-4" for="department">Department:</label>
+                        <input class="mb-5" type="text" id="department" name="dept" style="width:70%;">
+                    </div>
+                    <h3 class="text-dark text-center text-uppercase mt-5 border border-dark">Reason for leave</h3>
+                    <div class="container border border-secondary p-4">
+                        <input class="mt-5" type="checkbox" id="vacation" name="reason">
+                        <label for="vacation">Vacation</label>
+                        <input class="ms-5" type="checkbox" id="official-leave" name="reason">
+                        <label for="official-leave">Official Leave</label>
+                        <input class="ms-5" type="checkbox" id="maternity" name="reason">
+                        <label for="maternity">Maternity Leave</label><br>
+                        <input type="checkbox" id="sick" name="reason">
+                        <label for="sick">Sick-Self</label>
+                        <input class="ms-5" type="checkbox" id="sick2" name="reason">
+                        <label for="sick2">Sick -  Family</label>
+                        <input class="ms-5" type="checkbox" id="sick3" name="reason">
+                        <label for="sick3">Sick-Appoinment</label><br>
+                        <input type="checkbox" id="medical1" name="reason">
+                        <label for="medical1">Medical-self</label>
+                        <input class="ms-3" type="checkbox" id="medical2" name="reason">
+                        <label for="medical2">Medical-Family</label>
+                        <input class="ms-5" type="checkbox" id="parental" name="reason">
+                        <label for="parental">Parental Leave</label><br>
+                        <input type="checkbox" id="funeral" name="reason">
+                        <label for="funeral">Funeral-Relationship</label>
+                        <input type="text" style="width:50%;"><br>
+                        <input type="checkbox" id="other" name="reason">
+                        <label for="other">Other</label>
+                        <input type="text" id="other" name="reason" style="width:70%;">
+                    </div>
+                    <h3 class="text-dark text-center text-uppercase mt-5 border border-dark">leave requested</h3>
+                    <div class="container border border-secondary p-4">
+                        <label for="leave-start">From:</label>
+                        <input type="text" id="leave-start" name="leave-start">
+                        <label for="leave-end">To</label>
+                        <input type="text" id="leave-end" name="leave-end"><br>
+                        <label for="hour">Total Number of Hours Requested:</label>
+                        <input type="text" id="hour" name="hour"><br>
+                        <label for="days">Total Number of Days Requested:</label>
+                        <input type="text" id="days" name="days"><br>
+                        <label for="extra">Others:</label>
+                        <input type="text" id="extra" name="extra" style="width:80%;">
+                    </div>
+                </form>
+                <button class="btn btn-primary mt-3">Submit</button>
             </div>
-            <h3 class="text-dark text-center text-uppercase mt-5 border border-dark">Reason for leave</h3>
-            <div class="container border border-secondary p-4">
-                <input class="mt-5" type="checkbox" id="vacation" name="reason">
-                <label for="vacation">Vacation</label>
-                <input class="ms-5" type="checkbox" id="official-leave" name="reason">
-                <label for="official-leave">Official Leave</label>
-                <input class="ms-5" type="checkbox" id="maternity" name="reason">
-                <label for="maternity">Maternity Leave</label><br>
-                <input type="checkbox" id="sick" name="reason">
-                <label for="sick">Sick-Self</label>
-                <input class="ms-5" type="checkbox" id="sick2" name="reason">
-                <label for="sick2">Sick -  Family</label>
-                <input class="ms-5" type="checkbox" id="sick3" name="reason">
-                <label for="sick3">Sick-Appoinment</label><br>
-                <input type="checkbox" id="medical1" name="reason">
-                <label for="medical1">Medical-self</label>
-                <input class="ms-3" type="checkbox" id="medical2" name="reason">
-                <label for="medical2">Medical-Family</label>
-                <input class="ms-5" type="checkbox" id="parental" name="reason">
-                <label for="parental">Parental Leave</label><br>
-                <input type="checkbox" id="funeral" name="reason">
-                <label for="funeral">Funeral-Relationship</label>
-                <input type="text" style="width:50%;"><br>
-                <input type="checkbox" id="other" name="reason">
-                <label for="other">Other</label>
-                <input type="text" id="other" name="reason" style="width:70%;">
+            <div class="footer">
+                <footer>dsssssf jdsfklj sdfjsk</footer>
             </div>
-            <h3 class="text-dark text-center text-uppercase mt-5 border border-dark">leave requested</h3>
-            <div class="container border border-secondary p-4">
-                <label for="leave-start">From:</label>
-                <input type="text" id="leave-start" name="leave-start">
-                <label for="leave-end">To</label>
-                <input type="text" id="leave-end" name="leave-end"><br>
-                <label for="hour">Total Number of Hours Requested:</label>
-                <input type="text" id="hour" name="hour"><br>
-                <label for="days">Total Number of Days Requested:</label>
-                <input type="text" id="days" name="days"><br>
-                <label for="extra">Others:</label>
-                <input type="text" id="extra" name="extra" style="width:80%;">
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        <footer>dsssssf jdsfklj sdfjsk</footer>
+        </div>
     </div>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.
