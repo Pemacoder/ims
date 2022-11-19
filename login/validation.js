@@ -16,7 +16,7 @@ register.addEventListener('click',function(e){
 		isConfirmPasswordValid = checkConfirmPassword(); 
 	let isFormValid = isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid;
 	if(isFormValid){
-	
+        window.open('http://127.0.0.1:5500/index.html')
 	}
 
 })
@@ -126,9 +126,9 @@ login.addEventListener('click',function(e){
     let isUserNameValid = checkUserName(),
         isPasswordValid = checkForPassword();
 ;
-    let isFormValid = isUserNameValid && isPasswordValid
+    let isFormValid = isUserNameValid && isPasswordValid;
     if(isFormValid){
-
+        window.open('http://127.0.0.1:5500/index.html')
     }
 })
 
@@ -158,6 +158,7 @@ function checkForPassword(){
     if(!isRequired(code)){
         showError(passwordE2, 'Username cannot be blank.');
     }
+    return true;
 }
 function isUserNameSame (){
     if(userNameE1.value === (username[0] || username[1])){
